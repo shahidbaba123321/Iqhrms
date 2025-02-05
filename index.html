@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IQhrms - Intelligent HR Management System</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Header Section -->
@@ -14,13 +15,7 @@
                 <h1><a href="#home">IQhrms</a></h1>
             </div>
             <nav>
-                <!-- Hamburger Icon -->
-                <div class="hamburger-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <ul class="nav-links">
+                <ul>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#resources">Resources</a></li>
@@ -28,6 +23,11 @@
                     <li><a href="#signup" class="btn primary">Sign Up for Free</a></li>
                 </ul>
             </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </header>
 
@@ -67,23 +67,60 @@
             <h2>Core HR Simplified</h2>
             <div class="feature-grid">
                 <div class="feature-item">
+                    <i class="fas fa-database"></i>
                     <h3>Employee Database</h3>
                     <p>Centralized employee records for easy access and management.</p>
                     <a href="#learn-more" class="learn-more">Learn More</a>
                 </div>
                 <div class="feature-item">
+                    <i class="fas fa-tasks"></i>
                     <h3>Case Management</h3>
                     <p>Efficiently manage employee queries and cases.</p>
                     <a href="#learn-more" class="learn-more">Learn More</a>
                 </div>
                 <div class="feature-item">
+                    <i class="fas fa-cogs"></i>
                     <h3>Smart Workflows</h3>
                     <p>Automate HR processes with customizable workflows.</p>
                     <a href="#learn-more" class="learn-more">Learn More</a>
                 </div>
                 <div class="feature-item">
+                    <i class="fas fa-chart-line"></i>
                     <h3>Analytics</h3>
                     <p>Gain insights into workforce performance and trends.</p>
+                    <a href="#learn-more" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Time and Attendance Section -->
+    <section class="time-attendance">
+        <div class="container">
+            <h2>Optimize Your Time and Attendance</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Attendance Tracking</h3>
+                    <p>Monitor employee attendance in real-time.</p>
+                    <a href="#learn-more" class="learn-more">Learn More</a>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Shift Scheduling</h3>
+                    <p>Plan and manage employee shifts effortlessly.</p>
+                    <a href="#learn-more" class="learn-more">Learn More</a>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Leave Management</h3>
+                    <p>Streamline leave requests and approvals.</p>
+                    <a href="#learn-more" class="learn-more">Learn More</a>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-file-invoice"></i>
+                    <h3>Timesheet Conversion</h3>
+                    <p>Convert timesheets into payroll data seamlessly.</p>
                     <a href="#learn-more" class="learn-more">Learn More</a>
                 </div>
             </div>
@@ -100,22 +137,17 @@
                     <a href="#about">About</a>
                     <a href="#contact">Contact</a>
                 </div>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
                 <p>&copy; 2023 IQhrms. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript for Hamburger Menu -->
-    <script>
-        // Select the hamburger menu and navigation links
-        const hamburger = document.querySelector('.hamburger-menu');
-        const navLinks = document.querySelector('.nav-links');
-
-        // Toggle the 'active' class on click
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
