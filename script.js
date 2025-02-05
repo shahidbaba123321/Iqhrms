@@ -9,9 +9,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Mobile menu toggle
-const mobileMenu = document.getElementById('mobile-menu');
-const navUl = document.querySelector('header nav ul');
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("mobile-menu");
+    const mobileNav = document.querySelector(".mobile-nav");
 
-mobileMenu.addEventListener('click', () => {
-    navUl.classList.toggle('active');
+    menuToggle.addEventListener("click", function () {
+        mobileNav.classList.toggle("active");
+    });
 });
