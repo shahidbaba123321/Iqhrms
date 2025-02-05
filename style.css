@@ -90,9 +90,15 @@ header nav ul li a.btn {
     height: auto;
 }
 
-.features {
-    padding: 2rem;
+.trusted-by {
     text-align: center;
+    padding: 2rem;
+}
+
+.trusted-by .logos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .feature-grid {
@@ -107,6 +113,7 @@ header nav ul li a.btn {
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .feature-item i {
@@ -115,21 +122,44 @@ header nav ul li a.btn {
     margin-bottom: 1rem;
 }
 
-.about, .contact {
-    padding: 2rem;
+.feature-item a.learn-more {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.testimonials {
     text-align: center;
+    padding: 2rem;
 }
 
-.contact form {
+.awards {
+    text-align: center;
+    padding: 2rem;
+}
+
+.award-logos {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    justify-content: center;
+    gap: 2rem;
 }
 
-.contact input, .contact textarea {
-    padding: 0.7rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+.solution-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.mobile-accessibility {
+    text-align: center;
+    padding: 2rem;
+}
+
+.app-store {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 footer {
@@ -146,15 +176,14 @@ footer {
     margin-bottom: 1rem;
 }
 
-.footer-links ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
+.social-icons {
+    margin-top: 1rem;
 }
 
-.footer-links ul li a {
+.social-icons a {
     color: white;
-    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
 }
 
 /* Responsive Design */
@@ -182,7 +211,7 @@ footer {
         flex-direction: column;
     }
 
-    .feature-grid {
+    .feature-grid, .solution-grid {
         grid-template-columns: 1fr;
     }
 
