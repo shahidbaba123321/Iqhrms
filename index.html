@@ -4,272 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IQhrms - Intelligent HR Management System</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <div class="logo">
-            <h1>IQhrms</h1>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="#home">IQhrms</a></h1>
+            </div>
+            <nav>
+                <!-- Hamburger Icon -->
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#signin">Sign In</a></li>
+                    <li><a href="#signup" class="btn primary">Sign Up for Free</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#resources">Resources</a></li>
-                <li><a href="#signin">Sign In</a></li>
-                <li><a href="#" class="btn">Sign Up for Free</a></li>
-            </ul>
-        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-content">
-            <h1>Create Exceptional Employee Experiences</h1>
-            <p>Streamline HR processes and empower your workforce with IQhrms.</p>
-            <a href="#signup" class="btn primary">Sign Up for Free</a>
-        </div>
-        <div class="hero-image">
-            <img src="assets/images/hero-bg.png" alt="HRMS Dashboard">
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Create Exceptional Employee Experiences</h1>
+                <p>Streamline HR processes and empower your workforce with IQhrms.</p>
+                <div class="cta-buttons">
+                    <a href="#signup" class="btn primary">Sign Up for Free</a>
+                    <a href="#learn-more" class="btn secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="hero-image.jpg" alt="HR Management System">
+            </div>
         </div>
     </section>
 
     <!-- Trusted By Section -->
-    <section id="trusted-by" class="trusted-by">
-        <h2>Trusted By</h2>
-        <div class="logos">
-            <img src="assets/images/logo1.png" alt="Logo 1">
-            <img src="assets/images/logo2.png" alt="Logo 2">
-            <img src="assets/images/logo3.png" alt="Logo 3">
-            <img src="assets/images/logo4.png" alt="Logo 4">
-        </div>
-    </section>
-
-    <!-- Core HR Simplified -->
-    <section id="core-hr" class="core-hr">
-        <h2>Core HR Simplified</h2>
-        <div class="feature-grid">
-            <div class="feature-item">
-                <i class="fas fa-users"></i>
-                <h3>Employee Database</h3>
-                <p>Centralized employee records for easy access and management.</p>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-file-alt"></i>
-                <h3>Case Management</h3>
-                <p>Efficiently manage employee queries and cases.</p>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-project-diagram"></i>
-                <h3>Smart Workflows</h3>
-                <p>Automate HR processes with customizable workflows.</p>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-chart-bar"></i>
-                <h3>Analytics</h3>
-                <p>Gain insights into workforce performance and trends.</p>
-                <a href="#" class="learn-more">Learn More</a>
+    <section class="trusted-by">
+        <div class="container">
+            <h2>Trusted By</h2>
+            <div class="logos">
+                <img src="logo1.png" alt="Logo 1">
+                <img src="logo2.png" alt="Logo 2">
+                <img src="logo3.png" alt="Logo 3">
+                <img src="logo4.png" alt="Logo 4">
             </div>
         </div>
     </section>
 
-    <!-- Optimize Your Time and Attendance -->
-    <section id="time-attendance" class="time-attendance">
-        <h2>Optimize Your Time and Attendance</h2>
-        <div class="feature-grid">
-            <div class="feature-item">
-                <i class="fas fa-clock"></i>
-                <h3>Attendance Tracking</h3>
-                <p>Monitor employee attendance in real-time.</p>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-calendar-alt"></i>
-                <h3>Shift Scheduling</h3>
-                <p>Plan and manage employee shifts effortlessly.</p>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-plane-departure"></i>
-                <h3>Leave Management</h3>
-                <p>Streamline leave requests and approvals.</p>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-file-invoice"></i>
-                <h3>Timesheet Conversion</h3>
-                <p>Convert timesheets into payroll data seamlessly.</p>
-                <a href="#" class="learn-more">Learn More</a>
+    <!-- Core HR Simplified Section -->
+    <section class="core-hr">
+        <div class="container">
+            <h2>Core HR Simplified</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Employee Database</h3>
+                    <p>Centralized employee records for easy access and management.</p>
+                    <a href="#learn-more" class="learn-more">Learn More</a>
+                </div>
+                <div class="feature-item">
+                    <h3>Case Management</h3>
+                    <p>Efficiently manage employee queries and cases.</p>
+                    <a href="#learn-more" class="learn-more">Learn More</a>
+                </div>
+                <div class="feature-item">
+                    <h3>Smart Workflows</h3>
+                    <p>Automate HR processes with customizable workflows.</p>
+                    <a href="#learn-more" class="learn-more">Learn More</a>
+                </div>
+                <div class="feature-item">
+                    <h3>Analytics</h3>
+                    <p>Gain insights into workforce performance and trends.</p>
+                    <a href="#learn-more" class="learn-more">Learn More</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Performance Management -->
-    <section id="performance-management" class="performance-management">
-        <h2>Performance Management</h2>
-        <div class="feature-grid">
-            <div class="feature-item">
-                <i class="fas fa-bullseye"></i>
-                <h3>Goal Setting</h3>
-                <p>Set and track employee goals effectively.</p>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-comments"></i>
-                <h3>Continuous Reviews</h3>
-                <p>Provide ongoing feedback to employees.</p>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-users-cog"></i>
-                <h3>360-Degree Feedback</h3>
-                <p>Gather feedback from peers, managers, and subordinates.</p>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-chart-line"></i>
-                <h3>Performance Analytics</h3>
-                <p>Analyze employee performance metrics.</p>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Learning and Development -->
-    <section id="learning-development" class="learning-development">
-        <h2>Learning and Development</h2>
-        <div class="feature-grid">
-            <div class="feature-item">
-                <i class="fas fa-chalkboard-teacher"></i>
-                <h3>Virtual Classrooms</h3>
-                <p>Conduct interactive training sessions online.</p>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-book-open"></i>
-                <h3>Course Management</h3>
-                <p>Create and manage courses for employee training.</p>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-poll"></i>
-                <h3>Assessments</h3>
-                <p>Evaluate employee learning outcomes.</p>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Customer Testimonials -->
-    <section id="testimonials" class="testimonials">
-        <h2>What Our Customers Say</h2>
-        <div class="testimonial">
-            <p>"IQhrms has transformed how we manage HR. It's intuitive, efficient, and secure."</p>
-            <p><strong>- John Doe, CEO of TechCorp</strong></p>
-        </div>
-        <div class="stats">
-            <p>Over 5 million employees reached globally.</p>
-            <p>Present in 180+ countries.</p>
-        </div>
-    </section>
-
-    <!-- Awards and Recognitions -->
-    <section id="awards" class="awards">
-        <h2>Awards and Recognitions</h2>
-        <div class="award-logos">
-            <img src="assets/images/award1.png" alt="Award 1">
-            <img src="assets/images/award2.png" alt="Award 2">
-            <img src="assets/images/award3.png" alt="Award 3">
-        </div>
-    </section>
-
-    <!-- Industry Solutions -->
-    <section id="industry-solutions" class="industry-solutions">
-        <h2>Industry Solutions</h2>
-        <div class="solution-grid">
-            <div class="solution-item">
-                <h3>Media</h3>
-                <p>Tailored HR solutions for media companies.</p>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-            <div class="solution-item">
-                <h3>IT</h3>
-                <p>Manage IT teams efficiently with our tools.</p>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-            <div class="solution-item">
-                <h3>Education</h3>
-                <p>HR solutions designed for educational institutions.</p>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-            <div class="solution-item">
-                <h3>Healthcare</h3>
-                <p>Streamline HR processes in healthcare settings.</p>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-            <div class="solution-item">
-                <h3>Finance</h3>
-                <p>Secure and compliant HR solutions for finance.</p>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trust and Security -->
-    <section id="trust-security" class="trust-security">
-        <h2>Trust and Security</h2>
-        <p>Your data is safe with us. We adhere to strict privacy policies and security measures.</p>
-    </section>
-
-    <!-- Integrations -->
-    <section id="integrations" class="integrations">
-        <h2>Integrations</h2>
-        <div class="integration-logos">
-            <img src="assets/images/integration1.png" alt="Integration 1">
-            <img src="assets/images/integration2.png" alt="Integration 2">
-            <img src="assets/images/integration3.png" alt="Integration 3">
-            <img src="assets/images/integration4.png" alt="Integration 4">
-        </div>
-    </section>
-
-    <!-- Mobile Accessibility -->
-    <section id="mobile-accessibility" class="mobile-accessibility">
-        <h2>Mobile Accessibility</h2>
-        <p>Access HR functionalities on the go with our mobile app.</p>
-        <div class="app-store">
-            <img src="assets/images/app-store.png" alt="App Store">
-            <img src="assets/images/google-play.png" alt="Google Play">
-        </div>
-    </section>
-
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <h3>IQhrms</h3>
-            </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <p>&copy; 2023 IQhrms. All rights reserved.</p>
             </div>
         </div>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <p>&copy; 2023 IQhrms. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        // Select the hamburger menu and navigation links
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        // Toggle the 'active' class on click
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
