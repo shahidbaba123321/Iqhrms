@@ -8,12 +8,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Mobile menu toggle
-document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.getElementById("mobile-menu");
-    const mobileNav = document.querySelector(".mobile-nav");
+// Toggle mobile menu
+const mobileMenu = document.getElementById('mobile-menu');
+const navList = document.getElementById('nav-list');
 
-    menuToggle.addEventListener("click", function () {
-        mobileNav.classList.toggle("active");
-    });
+mobileMenu.addEventListener('click', () => {
+    navList.classList.toggle('active');
 });
